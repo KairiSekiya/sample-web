@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="ログイン画面.css">
+  <script src="ログイン画面.js"></script>
+  <title>ログイン画面</title>
+</head>
+<body>
+  <div class="main_field">
+
+    <p>メールアドレス</p>
+    <div id="mail_field">
+      <input type="email" id="mail" name="user_name" size = "50" placeholder="sample@gmail.com">
+    </div>
+
+    <p>パスワード</p>
+    <div id="password_1_field">
+      <input type="password" id="password_1" name="password_1" size = "50" placeholder="ここにパスワードの条件を記載">
+      <i class="fa-solid fa-eye" id = "eye_button_1" onclick="eye_button_1()"></i>
+    </div>
+
+  </div>
+
+  <!-------------------------------------------->
+  <!--1.ボタンを真ん中にするために、<div>でラップした-->
+    <div class="button_sample">
+      <button type="submit" id="button">ログイン</button>
+    </div>
+    <!-------------------------------------------->
+</body>
+</html>

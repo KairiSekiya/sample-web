@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-------------------------------------------->
+  <!--1.FontAwesomeを読み込む、CDNを使う-->
+  <!--2.FontAwesomeを表示するcssファイルを読み込む-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <!-------------------------------------------->
+  <link rel="stylesheet" href="好きなもの登録画面.css">
+  
+  <title>好きなもの登録画面</title>
+</head>
+<body>
+  <!--------------------------------------------------------->
+  <div class="main">
+  <h1>ようこそ 〇〇さん</h1>
+  <p>あなたの好きなものを３つ教えて</p>
+  <!-------------------------------------------->
+  <!--1.label要素の「for」は、input要素のidをつける-->
+  <div class="photo">
+  <input type="checkbox" name="photo_n" id="photo_1" value="photo1"><label for="photo_1"></label>
+  <input type="checkbox" name="photo_n" id="photo_2" value="photo2"><label for="photo_2"></label>
+  <input type="checkbox" name="photo_n" id="photo_3" value="photo3"><label for="photo_3"></label>
+  <input type="checkbox" name="photo_n" id="photo_4" value="photo4"><label for="photo_4"></label>
+  <input type="checkbox" name="photo_n" id="photo_5" value="photo5"><label for="photo_5"></label>
+  <input type="checkbox" name="photo_n" id="photo_6" value="photo6"><label for="photo_6"></label>
+  <input type="checkbox" name="photo_n" id="photo_7" value="photo7"><label for="photo_7"></label>
+  <input type="checkbox" name="photo_n" id="photo_8" value="photo8"><label for="photo_8"></label>
+  </div>
+  <!-------------------------------------------->
+  <!-- <div class="photo"> -->
+  <!--1.style(CSSの機能)でアイコンを大きくしている-->
+  <!--2.「fa-fw」をつけるとアイコンの前後に隙間が空いた-->
+  <!--3.画像を選択したら、明るさが変わるようにしたかったが、諦めた-->
+  <!-- <i class="fa-solid fa-image fa-fw" id="photo_1" style="font-size: 1500%;" onclick="photo_opacity()" ></i>
+  <i class="fa-solid fa-image fa-fw" id="photo_2" style="font-size: 1500%;" ></i>
+  <i class="fa-solid fa-image fa-fw" id="photo_3" style="font-size: 1500%;" ></i>
+  <i class="fa-solid fa-image fa-fw" id="photo_4" style="font-size: 1500%;" ></i>
+  <i class="fa-solid fa-image fa-fw" id="photo_5" style="font-size: 1500%;" ></i>
+  <i class="fa-solid fa-image fa-fw" id="photo_6" style="font-size: 1500%;" ></i>
+  <i class="fa-solid fa-image fa-fw" id="photo_7" style="font-size: 1500%;" ></i>
+  <i class="fa-solid fa-image fa-fw" id="photo_8" style="font-size: 1500%;" ></i> -->
+  <!-- </div> -->
+  <!-------------------------------------------->
+  <button type="submit" id="button">次へ進む</button>
+  </div>
+  <!---------------------------------------------------------->
+  <script src="好きなもの登録画面.js"></script>
+</body>
+</html>

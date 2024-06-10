@@ -1,0 +1,50 @@
+/*-------------------------------------------*/
+/* id属性は「#」,class属性は「.」 */
+/*1.「text-align: center;」でインライン要素を中央揃え*/
+.main_field{
+  text-align: center;
+}
+/*-------------------------------------------*/
+
+/*-------------------------------------------*/
+.button_sample{
+  text-align: center;
+  padding: 20px;
+}
+/*-------------------------------------------*/
+
+/*-------------------------------------------*/
+/*1.パスワードと同じ枠線にしている*/
+/*2.「padding-right」で位置を調整*/
+#mail{
+  border: none;
+  padding-right: 30px;
+}
+
+#mail_field{
+  margin: auto;
+  border-width: thin;
+  border-style: solid;
+  width: 380px;
+  height: 25px;
+}
+/*-------------------------------------------*/
+
+/*-------------------------------------------*/
+/*1.「border: none;」でボタンの枠線を消す*/
+#password_1{
+  border: none;
+}
+
+/*1.「border-width」で枠線の太さを調整*/
+/*2.「border-style」で枠線の種類を調整、「solid」は1本線*/
+/*3.「margin: auto;」でブロックレベル要素を中央揃え*/
+#password_1_field{
+  margin: auto;
+  border-width: thin;
+  border-style: solid;
+  width: 380px;
+  height: 25px;
+}
+
+/*-------------------------------------------*/

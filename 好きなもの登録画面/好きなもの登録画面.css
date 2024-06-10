@@ -1,0 +1,43 @@
+/*-------------------------------------------*/
+/* id属性は「#」,class属性は「.」 */
+/*1.「text-align: center;」でインライン要素を中央揃え*/
+.main{
+  text-align: center;
+}
+/*-------------------------------------------*/
+
+/*-------------------------------------------*/
+/* 「before」必要、「after」でも見た目はあまり変わらなかった、、？ */
+/* contentプロパティでテキストを表示、ここでは「""」 */
+.photo ::before{
+  content: "";
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+}
+
+/* 「content,font-family,font-size」はFontAwesomeを背景に使うために必要 */
+/* 「label」がないと画像が表示されなかった */
+#photo_1 + label:before , #photo_2 + label:before,
+#photo_3 + label:before , #photo_4 + label:before,
+#photo_5 + label:before , #photo_6 + label:before,
+#photo_7 + label:before , #photo_8 + label:before{
+  content:"\f03e";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 1500%;
+}
+
+#photo_1:checked + label, #photo_2:checked + label,
+#photo_3:checked + label, #photo_4:checked + label,
+#photo_5:checked + label, #photo_6:checked + label,
+#photo_7:checked + label, #photo_8:checked + label{
+  opacity: 0.5;
+}
+
+#photo_1, #photo_2,#photo_3,#photo_4,
+#photo_5,#photo_6,#photo_7,#photo_8{
+  display: none;
+}
+/*-------------------------------------------*/
+

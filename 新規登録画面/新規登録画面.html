@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-------------------------------------------->
+  <!--1.FontAwesomeを読み込む、CDNを使う-->
+  <!--2.FontAwesomeを表示するcssファイルを読み込む-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <!-------------------------------------------->
+  <link rel="stylesheet" href="新規登録画面.css">
+  <script src="新規登録画面.js"></script>
+  <title>新規登録画面</title>
+</head>
+<body>
+  <!-------------------------------------------->
+  <!--1.<div>でまとめると、ボタンが下になった-->
+  <!--2.type属性は大切-->
+  <div class="main_field">
+
+    <p>メールアドレス</p>
+    <div id="mail_field">
+      <input type="email" id="mail" name="user_name" size = "50" placeholder="sample@gmail.com">
+    </div>
+
+  <!--1.onclick属性で要素をクリックした後の処理を指定-->
+    <p>パスワード</p>
+    <div id="password_1_field">
+      <input type="password" id="password_1" name="password_1" size = "50" placeholder="ここにパスワードの条件を記載">
+      <i class="fa-solid fa-eye" id = "eye_button_1" onclick="eye_button_1()"></i>
+    </div>
+
+    <p>パスワード（もう一度）</p>
+    <div id="password_2_field">
+      <input type="password" id="password_2" name="password_2" size = "50" placeholder="ここにパスワードの条件を記載">
+      <i class="fa-solid fa-eye" id = "eye_button_2" onclick="eye_button_2()"></i>
+    </div>
+
+  </div>
+  <!-------------------------------------------->
+  <!--1.ボタンを真ん中にするために、<div>でラップした-->
+  <div class="button_sample">
+    <button type="submit" id="button">新規登録</button>
+  </div>
+  <!-------------------------------------------->
+</body>
+</html>
